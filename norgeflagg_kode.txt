@@ -1,0 +1,35 @@
+use context essentials2021
+#flag parts
+flag-red = rectangle(220, 160, "solid", "red")
+
+flag-white-vert = rectangle(40, 160, "solid", "white")
+flag-white-hor = rectangle(220, 40, "solid", "white")
+
+flag-blue-vert = rectangle(20, 160, "solid", "blue")
+flag-blue-hor = rectangle(220, 20, "solid", "blue")
+
+
+#full image
+
+put-image(
+  flag-blue-vert,
+  80,80,
+  put-image(
+    flag-blue-hor,
+    110,80,
+    put-image(
+      flag-white-vert,
+      80,80,
+      put-image(
+        flag-white-hor,
+        110,80,
+        put-image(
+          flag-red,
+          110,80,
+          empty-scene(220,160))))))
+
+
+#forklaring
+
+print('Det norske flagget kan deles inn i enkle former når det skal lages. \nAvhengig om hvordan man setter det sammen, kan man bare ta et stort, rødt \nrektangel som bakgrunn og legge to hvite og 
+to blå rektangler oppå \nfor å danne korsene over. Det var det jeg gjorde med denne koden hvertfall.')
